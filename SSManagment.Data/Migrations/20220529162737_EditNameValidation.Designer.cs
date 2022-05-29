@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SSManagement.Data;
 
 namespace SSManagment.Data.Migrations
 {
     [DbContext(typeof(SSContext))]
-    partial class SSContextModelSnapshot : ModelSnapshot
+    [Migration("20220529162737_EditNameValidation")]
+    partial class EditNameValidation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
